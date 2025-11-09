@@ -1,0 +1,63 @@
+body{
+    background-color: aquamarine;
+    vertical-align: middle;
+    text-align: center;
+	display: table;
+	margin: 1.2rem auto;
+	width: 1000px;
+    border-radius: 12px;
+}
+#imag{
+    height: 200px;
+    width: 350px;
+}
+#video{
+    height: 315px;
+    width: 532px;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+}
+h1{
+    font-family: "Franklin Gothic Heavy";
+    color: white;
+    background-color: #28324e;
+}
+form{
+    border: red;
+    border-radius: 12px;
+}
+#letra{
+    font-family: "Arial";
+    color: blue;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+html{
+    background-color: #28324e;
+}
+h2{
+    background-color: blue;
+    color: #b8cad4;
+    font-style: italic;
+    font-size: 30px;
+    font-family: "Calibri";
+}
+nav{
+    border: 10px solid blue;
+    border-radius: 12px;    
+    background-color: #b8cad4;
+    text-decoration: none;
+}
+form{
+    background-color: #b8cad4;
+    border: 10px solid red;
+}
+.recuadro{
+    margin: 1rem auto;
+    display: table;
+    width: 30%;
+}

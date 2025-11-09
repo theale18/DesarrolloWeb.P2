@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paciente</title>
+
+    <link rel="stylesheet" href="paciente.css">
+
+    <script type="text/javascript" src="paciente.js">
+        var urlParams = new URLSearchParams(window.location.search);
+        var usuario = urlParams.get('user');
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if(usuario){
+                document.getElementById('welcome').textContent = "¡¡Bievenida " +usuario;
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1 id="welcome"> </h1>
+
+    <div class="row"> <!--ATRAS-->
+        <div class="col-1 menu">
+            <a href="index.html">
+                <img id="logo" src="https://www.pngkey.com/png/detail/140-1400907_back-logo-black-back-button-png.png">
+            </a>
+        </div>
+
+        <section id="letra" class=""> <!--INFORMACION DEL USUARIO-->
+            <center>
+                Informacion del Usuario
+            </center>
+            <table id="letra">
+                <tr >
+                    <th>Nombre: </th>
+                    <th>Mirtha</th>   
+                </tr>
+                <tr>
+                    <th>Apellido: </th>
+                    <th>Legrand</th>
+                </tr>
+                <tr>
+                    <th> Edad: </th>
+                    <th>96 años</th>
+                </tr>
+                <tr>
+                    <th>Estado: </th>
+                    <th>Activo</th>
+
+                </tr>
+            </table>
+        </section>
+    </div>
+    
+    <main>
+        <h1> Estos son tus proximos turnos </h1>
+        <table border="collapse">
+            <thead id="letra">
+                <tr>
+                    <th>Fecha del Turno</th>
+                    <th>Hora</th>
+                    <th>Medico</th>
+                    <th>Observaciones</th>
+                    <th>Sede</th>
+                    <th>Desea Cambiar el Turno?</th>
+                    <th>Fecha Solicitada</th>
+                    <th>Desea Cancelar el Turno?</th>
+                </tr>
+            </thead>
+            <tr id="blanco">
+                <th>20/11/2023</th>
+                <th>15:00hs</th>
+                <th>Dra. Gomez</th>
+                <th>Dolor de Cabeza</th>
+                <th>Villa del Parque</th>
+                <th> <input type="button" id="cambiar" value="Cambiar"> </th>
+                <th>26/01/2023</th>
+                <th> <input type="submit" id="cancelar" value="Cancelar"> </th>
+            </tr>
+            <tr id="blanco">
+                <th>06/12/2023</th>
+                <th>10:00hs</th>
+                <th>Dr. Martinez</th>
+                <th>Insomnio</th>
+                <th>Balvanera</th>
+                <th> <input type="button" id="cambiar" value="Cambiar"> </th>
+                <th>19/03/2023</th>
+                <th> <input type="submit" id="cancelar" value="Cancelar"> </th>
+            </tr>
+            <tr id="blanco">
+                <th>10/09/2023</th>
+                <th>9:00hs</th>
+                <th>Dra. Fernandez</th>
+                <th>Poco Apetito</th>
+                <th>Villa Crespo</th>
+                <th> <input type="button" id="cambiar" value="Cambiar"> </th>
+                <th>01/02/2023</th>
+                <th> <input type="submit" id="cancelar" value="Cancelar"> </th>
+            </tr>
+        </table>
+        <p>
+        
+        <details class="recuadro">
+            <summary> <span> Reservar Proximo Turno </span> </summary>
+            <form id="letra">
+                <center>
+                    <h1> Completar Formulario </h1>
+                    <li>
+                        <label for="lista"> Elegir Especialidad</label> <br>
+                        <input list="espec" id="texto" name="Lista" required >
+                    </li>
+                        <datalist id="espec">
+                            <option value="Medico/a Clincico">
+                            <option value="Oftalmologo">
+                            <option value="Dermatologia">
+                            <option value="Odontologia">
+                            <option value="Urologia">
+                            <option value="Alercologia">
+                            <option value="Kinesiologia">
+                        </datalist>
+                        <p>
+                        <li>
+                            <label for="lista"> Elegir Doctor/a</label> <br>
+                            <input list="doc" id="texto" name="Lista" required>
+                        </li>
+                        <datalist id="doc">
+                            <option value="Dra. Gomez">
+                            <option value="Dr. Martinez">
+                            <option value="Dra. Fernandez">
+                            <option value="Dra. Pereira">
+                            <option value="Dra. Sanchez">
+                            <option value="Dr. Carrizo">
+                            <option value="Dr. House">
+                        </datalist>
+                    </p>
+                    <li>
+                        Ingresar Fecha del Turno <br>
+                        <input  type="date" id="start" name="trip-start" required value="" min="2023-07-03" max="2024-12-31" >
+                    </li>
+                    <p>
+                        <li>
+                            <label for="lista"> Ingresar Email: </label> <br>
+                            <input id="texto" type="text" name="Email" required>
+                        </li>
+                    </p>
+                    <li>
+                        Ingresar Obervaciones <br>
+                    </li>
+                    <textarea name="texto" rows="10" cols="90" required>
+                    </textarea>
+                <p>
+                    <input type="submit" id="alerta" value="Reservar Turno" >                        
+                </p>
+                </center>
+            </form>
+        </details>
+
+        <footer id="contactos">
+            <h1> Contactanos </h1>
+            <a href="https://www.facebook.com/">
+                <img src="https://w7.pngwing.com/pngs/434/247/png-transparent-fb-social-icons-circular-black-icon.png" id="logo">
+            </a>
+            <a href="https://web.whatsapp.com/">
+                <img src="https://w7.pngwing.com/pngs/591/514/png-transparent-black-dial-logo-whatsapp-email-computer-icons-whatsapp-text-mobile-phones-area.png" id="logo">
+            </a>
+            <a href="https://web.telegram.org/">
+                <img src="https://w7.pngwing.com/pngs/374/463/png-transparent-telegram-logos-and-brands-icon.png" id="logo">    
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="https://img.freepik.com/vector-premium/logotipo-redes-sociales-contorno-negro_197792-2416.jpg?w=2000" id="logo">
+            </a>
+        </footer>
+    </main>
+</body>
+</html>

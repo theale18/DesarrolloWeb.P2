@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Log In</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Nuestra Clinica
+        </h1>
+        <img id="imag" src="https://blogs.iadb.org/salud/wp-content/uploads/sites/15/2018/08/banner-01_1200x525-v02.jpg">
+        <img id="imag" src="https://img.lovepik.com/photo/40172/3726.jpg_wh860.jpg">
+        <img id="imag" src="https://plustatic.com/453/conversions/influencers-medicina-salud-large.jpg">
+    </header>
+    <br>
+    <h1> Iniciar Sesion </h1> 
+    <form id="login" class="recuadro"> <!--LOGIN-->
+        <li id="letra">
+            Ingresar <br>
+            <input type="text" id="user" placeholder="Usuario" required> <p>
+        </li>
+        <li id="letra">
+            Ingresar <br>
+            <input type="password" id="pass" placeholder="Contraseña" required> <br>
+        </li>
+        <p>
+            <input type="submit" value="Iniciar Sesion">
+        </p>
+    </form>
+
+   
+    <h1> Informacion Disponible </h1>
+    <nav class="recuadro" > <!--MENU-->
+        <div>
+            <a href="#imagenes" id="letra"> Imagenes </a>
+        </div>
+        <div>
+            <a href="#videos" id="letra"> Videos </a>
+        </div>
+        <div>
+            <a href="#musica" id="letra"> Musica </a>
+        </div>
+        <div>
+            <a href="#contactos" id="letra"> Contactanos  </a>
+        </div>
+    </nav>
+
+    <main>
+        <table id="imagenes" border="">
+            <h2> Imagenes </h2>
+            <tr>
+                <th>
+                    <img id="imag" src="https://comunidadprofesional.com.ar/wp-content/uploads/2023/04/clinicas.jpg">
+                </th>
+                <th>
+                    <img id="imag" src="https://www.unc.edu.ar/sites/default/files/2021-08-05-HNC-mejor-atenci%C3%B3n-02.jpg">
+                </th>
+                <th>
+                    <img id="imag" src="https://brandandhealth.com/wp-content/uploads/2022/01/7-estrategias-para-hacer-crecer-tu-cli%CC%81nica-1024x683.jpeg">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <img id="imag" src="https://www.unitecoprofesional.es/blog/wp-content/uploads/2021/05/sesiones-clinicas.jpg">
+                </th>
+                <th>
+                    <img id="imag" src="https://www.namesnack.com/images/Namesnack-nombres-para-cl%C3%ADnicas-m%C3%A9dicas-3428x2333-20210812.jpeg?crop=16:9,smart&width=1200&dpr=2">
+                </th>
+                <th>
+                    <img id="imag" src="https://gossipvzla.com/wp-content/uploads/2023/03/Ranking-Hospitales-2018-G.jpg">
+                </th>
+            </tr>
+        </table>
+
+        <section id="videos">
+            <h2> Videos </h2>
+            <iframe id="video" src="https://www.youtube.com/embed/sACvBDSj9nI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id="video" src="https://www.youtube.com/embed/OHV4EzX5FYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+            <iframe id="video" src="https://www.youtube.com/embed/qWmrOljYvQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id="video" src="https://www.youtube.com/embed/oG-WMU0OIac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>     
+
+        <section2 id="musica">
+            <h2> Nuestra seccion de Musica </h2>
+            <audio controls autoplay loop>
+                <source src="Clair De Lune.mp3" type="audio/mpeg">           
+            </audio> <br>
+            <audio controls autoplay loop>
+                <source src="White Trash.mp3" type="audio/mpeg">
+            </audio> </br>
+            <audio controls autoplay loop>
+                <source src="Soy Sabalero.mp3" type="audio/mpeg"> 
+            </audio>
+        </section2>
+    </main>
+
+    <footer id="contactos">
+        <h2> Contactanos </h2>
+        <a href="https://www.facebook.com/">
+            <img src="https://w7.pngwing.com/pngs/434/247/png-transparent-fb-social-icons-circular-black-icon.png" id="logo">
+        </a>
+        <a href="https://web.whatsapp.com/">
+            <img src="https://w7.pngwing.com/pngs/591/514/png-transparent-black-dial-logo-whatsapp-email-computer-icons-whatsapp-text-mobile-phones-area.png" id="logo">
+        </a>
+        <a href="https://web.telegram.org/">
+            <img src="https://w7.pngwing.com/pngs/374/463/png-transparent-telegram-logos-and-brands-icon.png" id="logo">    
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="https://img.freepik.com/vector-premium/logotipo-redes-sociales-contorno-negro_197792-2416.jpg?w=2000" id="logo">
+        </a>
+    </footer>
+
+    <script src="index.js"> </script>
+</body>
+</html>

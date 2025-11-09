@@ -1,0 +1,98 @@
+body{
+    background-color: #28324e;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+	  display: table;
+	  margin: 1.2rem auto;
+	  width: 800px;
+    border-radius: 12px;
+    border: 10px solid #d1ebf7;
+}
+html{
+  background-color:black;
+}
+h1{
+    font-family: "Franklin Gothic Heavy";
+    color: #0a497b;
+    background-color: #d1ebf7;
+    font-size: 25px;
+}
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tarjeta1 tarjeta2 tarjeta3"
+      "tarjeta1 tarjeta2 tarjeta3"
+      ". . .";
+  }
+  
+  .tarjeta1 { grid-area: tarjeta1; }
+  
+  .tarjeta2 { grid-area: tarjeta2; }
+  
+  .tarjeta3 { grid-area: tarjeta3; }
+  
+
+table{
+    font-family: "Arial";
+    background-color: #d1ebf7;
+    color: #28324e;
+    border-radius: 12px;
+}
+
+.recuadro{
+  margin: 1rem auto;
+  display: table;
+  width: 15%;
+}
+span{
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+#centro {
+    overflow:auto;
+  }
+div{
+    padding: 4px;
+    margin-top: 10px;
+    display: block;
+    width: 20%;
+}
+
+  footer{
+    margin-top:10px;
+  }
+@media only screen and (max-width: 767px) {
+    nav, div, footer, {
+    width: 100%;
+  }
+}
+
+
+
+#icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+#logo{
+height: 100px;
+width: 100px;
+border-radius: 20px;
+}
+.semana{
+  text-align: center;
+  font-weight: bold;
+}
+html{
+  font-size: 20px;  
+}

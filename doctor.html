@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Doctor</title>
+
+    <link rel="stylesheet" href="doctor.css">
+
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var usuario = urlParams.get('user');
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if(usuario){
+                document.getElementById('welcome').textContent = "¡¡Bievenido sea Dr. " +usuario+ "!!";
+            }
+        });
+    </script>
+
+    <style>
+        table{
+            text-align: center;
+            vertical-align: middle;
+        }
+        tr, th{
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <center>
+        <img id="logo" src="https://png.pngtree.com/png-vector/20191130/ourmid/pngtree-doctor-icon-circle-png-image_2055257.jpg">
+    </center>
+    <h1 id="welcome"> </h1>
+
+    <table class="recuadro" id="letra">
+        <tr>
+            <td colspan="2"> <b> Informacion del Usuario </b> </td>
+        </tr>
+        <tr>
+            <th>Nombre: </th>
+            <th>Gregory</th>   
+        </tr>
+        <tr>
+            <th>Apellido: </th>
+            <th>House</th>
+        </tr>
+        <tr>
+            <th> Edad: </th>
+            <th>50 años</th>
+        </tr>
+        <tr>
+            <th>Estado: </th>
+            <th>Activo</th>
+        </tr>
+    </table>
+
+    <table class="recuadro"> <!---ICONO-->
+        <tr>
+            <th> Volver </th>
+            <th>
+                <a href="index.html">
+                    <img id="icon" src="https://w7.pngwing.com/pngs/587/582/png-transparent-computer-icons-encapsulated-postscript-back-icon-angle-text-%D0%BA%D1%80%D1%83%D0%B3%D0%BB%D1%8B%D0%B5-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B8.png">
+                </a>
+            </th>
+        </tr>
+    </table>
+
+    <main id="centro">
+        <h1> PROXIMOS TURNOS </h1>
+        <div class="container"> <!--TARJETAS-->
+            <div class="tarjeta1">
+                <table border-collapse="collapse" id="min">
+                    <tr>
+                        <td class="semana" colspan="2"> <span>Semana 1</span> </td>
+                    </tr>
+                    <tr>
+                        <th>Fecha: </th>
+                        <th> 03/08/2023 </th>
+                    </tr>
+                    <tr>
+                        <th>Horario: </th>
+                        <th> 14:00hs </th>
+                    </tr>
+                    <tr>
+                        <th>Nombre:</th>
+                        <th> Carlos </th>
+                    </tr>
+                    <tr>
+                        <th>Apellido: </th>
+                        <th> Lopez </th>
+                    </tr>
+                    <tr>
+                        <th>Edad: </th>
+                        <th> 35 años</th>
+                    </tr>
+                    <tr>
+                        <th>Observaciones</th>
+                        <th> Migraña </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="tarjeta2">
+                <table>
+                    <tr>
+                        <td class="semana" colspan="2"> <span>Semana 2</span> </td>
+                    </tr>
+                    <tr>
+                        <th>Fecha: </th>
+                        <th> 04/09/2023 </th>
+                    </tr>
+                    <tr>
+                        <th>Horario: </th>
+                        <th> 15:00hs</th>
+                    </tr>
+                    <tr>
+                        <th>Nombre:</th>
+                        <th> Carolina </th>
+                    </tr>
+                    <tr>
+                        <th>Apellido: </th>
+                        <th> Estevez </th>
+                    </tr>
+                    <tr>
+                        <th>Edad: </th>
+                        <th> 28 años </th>
+                    </tr>
+                    <tr>
+                        <th>Observaciones</th>
+                        <th> Indigestion </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="tarjeta3">
+                <table>
+                    <tr>
+                        <td class="semana" colspan="2"> <span>Semana 3</span> </td>
+                    </tr>
+                    <tr>
+                        <th>Fecha: </th>
+                        <th> 05/10/2023 </th>
+                    </tr>
+                    <tr>
+                        <th>Horario: </th>
+                        <th> 17:00hs </th>
+                    </tr>
+                    <tr>
+                        <th>Nombre:</th>
+                        <th> German </th>
+                    </tr>
+                    <tr>
+                        <th>Apellido: </th>
+                        <th> Alvarez </th>
+                    </tr>
+                    <tr>
+                        <th>Edad: </th>
+                        <th> 40 años </th>
+                    </tr>
+                    <tr>
+                        <th>Observaciones</th>
+                        <th> Angina </th>
+                    </tr>
+                </table>
+            </div>
+          </div>
+    </main>
+
+    <footer id="contactos"> <!--CONTACTO-->
+        <h1> Contactanos </h1>
+        <a href="https://www.facebook.com/">
+            <img src="https://w7.pngwing.com/pngs/434/247/png-transparent-fb-social-icons-circular-black-icon.png" id="icon">
+        </a>
+        <a href="https://web.whatsapp.com/">
+            <img src="https://w7.pngwing.com/pngs/591/514/png-transparent-black-dial-logo-whatsapp-email-computer-icons-whatsapp-text-mobile-phones-area.png" id="icon">
+        </a>
+        <a href="https://web.telegram.org/">
+            <img src="https://w7.pngwing.com/pngs/374/463/png-transparent-telegram-logos-and-brands-icon.png" id="icon">    
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="https://img.freepik.com/vector-premium/logotipo-redes-sociales-contorno-negro_197792-2416.jpg?w=2000" id="icon">
+        </a>
+    </footer>
+</body>
+</html>
